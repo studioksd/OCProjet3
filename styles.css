@@ -11,6 +11,11 @@ header #header-logo {
   width: 40%;
   margin: 9px auto 7px auto;
 }
+header #header-logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 header #header-logo-menu {
   width: 40%;
   margin: 9px auto 7px auto;
@@ -44,7 +49,7 @@ button {
 }
 button:hover {
   background: linear-gradient(#99E2D0, #FF79DA);
-  box-shadow: 0px 6px 8px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 9px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 #main-header {
@@ -141,7 +146,6 @@ button:hover {
   padding: 5px 0 0 15px;
 }
 #restaurants .resto-card .textcontainer i {
-  width: 50px;
   position: relative;
   left: 87%;
   bottom: 43%;
@@ -190,9 +194,9 @@ footer a {
 }
 .menu-header i {
   color: black;
-  position: relative;
-  left: 15px;
-  top: 12px;
+  position: absolute;
+  left: 20px;
+  top: 18px;
 }
 
 .menu {
@@ -278,6 +282,28 @@ footer a {
 }
 .menu-item .container-price .prix {
   font-weight: 600;
+}
+
+.heartbase {
+  position: relative;
+  top: -40px;
+  transition: opacity 400ms;
+  z-index: 1;
+}
+.heartbase:hover {
+  opacity: 0;
+}
+
+.heartbg {
+  position: relative;
+  top: -56px;
+  color: #9356DC;
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 500ms;
+}
+.heartbg:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */

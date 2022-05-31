@@ -25,6 +25,11 @@ header {
     #header-logo {
         width: 40%;
         margin: 9px auto 7px auto;
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     #header-logo-menu {
@@ -62,7 +67,7 @@ button {
 
     &:hover {
         background: linear-gradient($color3, $color2);
-        box-shadow: 0px 6px 8px 1px rgba(0,0,0,0.2);
+        box-shadow: 0px 9px 6px 0px rgba(0,0,0,0.2);
     }
 }
 
@@ -173,12 +178,10 @@ button {
 	        line-height: 40%;
 	        padding: 5px 0 0 15px;
             i {
-                width: 50px;
                 position: relative;
                 left: 87%;
                 bottom: 43%;
             }
-
         }
 
     }
@@ -235,9 +238,9 @@ footer {
     display: flex;
     i {
         color: black;
-        position: relative;
-        left: 15px;
-        top: 12px;
+        position: absolute;
+        left: 20px;
+        top: 18px;
     }
 }
 
@@ -328,5 +331,29 @@ footer {
         }
     }
 
+}
+
+
+
+.heartbase {
+    position: relative;
+    top: -40px;
+    transition: opacity 400ms;
+    z-index: 1;
+    &:hover {
+        opacity: 0;
+    }
+}
+
+.heartbg {
+    position: relative;
+    top: -56px;
+    color: $color1;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 500ms;
+    &:hover {
+        opacity: 1; 
+    }
 }
 
