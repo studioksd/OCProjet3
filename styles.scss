@@ -251,17 +251,6 @@ footer {
     margin: 0 0 0 0;
     position: relative;
     bottom: 30px;
-    h4 {
-        font-weight: 300;
-        margin: 12px 0 0 0;
-        padding: 5px 0 5px 0;
-    }
-    #borderbottom {
-        border-bottom: 3px solid $color3;
-        position: absolute;
-        right: 85%;
-        left: 12px;
-    }
     button {
         width: 50%;
         background: linear-gradient($color2, $color1);
@@ -297,6 +286,27 @@ footer {
     }
 }
 
+.menu-section {
+    opacity: 0;
+    animation: titleappear 800ms ease-in-out 0s 1 forwards;
+    @for $i from 0 through 2 {
+        &--#{$i} {
+            animation-delay: 200ms + 750ms * $i ;
+         }
+    }
+    h4 {
+        font-weight: 300;
+        margin: 12px 0 0 0;
+        padding: 5px 0 5px 0;
+    }
+    #borderbottom {
+        border-bottom: 3px solid $color3;
+        position: absolute;
+        right: 85%;
+        left: 12px;
+    }
+}
+
 .menu-item {
     background-color: white;
     border-radius: 15px;
@@ -304,6 +314,13 @@ footer {
     padding: 10px 0 10px 10px;
     margin: 15px 0 0 0;
     display: flex;
+    opacity: 0;
+    animation: appear 1400ms ease-in-out 0s 1 forwards;
+    @for $i from 1 through 10 {
+        &--#{$i} {
+            animation-delay: 250ms * $i;
+         }
+    }
     p {
         margin: 0 0 0 0;
         padding: 2px 0 2px 0;
@@ -417,5 +434,28 @@ $anim-delay: calc($anim-dur / $num-bars);
     100% {
         opacity: 0;
         visibility: hidden;
+    }
+}
+
+// Apparition progressive menu
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        position: relative;
+        top: 15px;
+    }
+    100% {
+        opacity: 1;
+        top: -15px;
+    }
+}
+
+@keyframes titleappear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

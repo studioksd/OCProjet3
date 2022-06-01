@@ -207,17 +207,6 @@ footer a {
   position: relative;
   bottom: 30px;
 }
-.menu h4 {
-  font-weight: 300;
-  margin: 12px 0 0 0;
-  padding: 5px 0 5px 0;
-}
-.menu #borderbottom {
-  border-bottom: 3px solid #99E2D0;
-  position: absolute;
-  right: 85%;
-  left: 12px;
-}
 .menu button {
   width: 50%;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -251,6 +240,31 @@ footer a {
   right: 10px;
 }
 
+.menu-section {
+  opacity: 0;
+  animation: titleappear 800ms ease-in-out 0s 1 forwards;
+}
+.menu-section--0 {
+  animation-delay: 200ms;
+}
+.menu-section--1 {
+  animation-delay: 950ms;
+}
+.menu-section--2 {
+  animation-delay: 1700ms;
+}
+.menu-section h4 {
+  font-weight: 300;
+  margin: 12px 0 0 0;
+  padding: 5px 0 5px 0;
+}
+.menu-section #borderbottom {
+  border-bottom: 3px solid #99E2D0;
+  position: absolute;
+  right: 85%;
+  left: 12px;
+}
+
 .menu-item {
   background-color: white;
   border-radius: 15px;
@@ -258,6 +272,38 @@ footer a {
   padding: 10px 0 10px 10px;
   margin: 15px 0 0 0;
   display: flex;
+  opacity: 0;
+  animation: appear 1400ms ease-in-out 0s 1 forwards;
+}
+.menu-item--1 {
+  animation-delay: 250ms;
+}
+.menu-item--2 {
+  animation-delay: 500ms;
+}
+.menu-item--3 {
+  animation-delay: 750ms;
+}
+.menu-item--4 {
+  animation-delay: 1000ms;
+}
+.menu-item--5 {
+  animation-delay: 1250ms;
+}
+.menu-item--6 {
+  animation-delay: 1500ms;
+}
+.menu-item--7 {
+  animation-delay: 1750ms;
+}
+.menu-item--8 {
+  animation-delay: 2000ms;
+}
+.menu-item--9 {
+  animation-delay: 2250ms;
+}
+.menu-item--10 {
+  animation-delay: 2500ms;
 }
 .menu-item p {
   margin: 0 0 0 0;
@@ -368,6 +414,25 @@ footer a {
   100% {
     opacity: 0;
     visibility: hidden;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    position: relative;
+    top: 15px;
+  }
+  100% {
+    opacity: 1;
+    top: -15px;
+  }
+}
+@keyframes titleappear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
