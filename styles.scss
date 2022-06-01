@@ -357,3 +357,65 @@ footer {
     }
 }
 
+// Loading spinner
+
+$size: 20px;
+$num-bars: 5;
+$anim-dur: 800ms;
+$anim-delay: calc($anim-dur / $num-bars);
+
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2;
+    cursor: pointer;
+    animation: hide 3s ease-in 0s 1 forwards;
+  }
+
+.load {
+    width: $size*20;
+    height: $size*15;
+    display: flex;
+    justify-content: space-evenly;
+    position:absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    &__bar {
+        background-color: $color3;
+        height: 100%;
+        width: $size*1.5;
+        border-radius: 50px;
+        animation: bars $anim-dur backwards 5 ease-in-out alternate;
+        @for $i from 1 through $num-bars {
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+             }
+        }
+    }
+}
+
+@keyframes bars {
+    0% {
+        transform: scaleY(0.5);
+    }
+    100% {
+        transform: scaleY(1.0);
+        opacity: 0.3;
+    }
+}
+
+@keyframes hide {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
