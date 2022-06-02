@@ -316,7 +316,6 @@ footer {
     padding: 0 0 0 10px;
     margin: 15px 0 0 0;
     display: flex;
-    justify-items: flex-end;
     opacity: 0;
     animation: appear 1400ms ease-in-out 0s 1 forwards;
     @for $i from 1 through 10 {
@@ -350,11 +349,8 @@ footer {
     }
 
     .container-price {
-        width: 20px;
-        
+        width: 17%;
         margin: 0;
-        // position: relative;
-        // right: 50px;
         padding: 10px 0 10px 0;
         .prix {
             padding: 20px 10px 0 10px;
@@ -365,17 +361,17 @@ footer {
         height: 67.1 px;
         width: 0%;
         color: white;
-        background-color: green;
-        // position: relative;
-        // left: 100%;
-        display: flex;
+        background-color: $color3;
         overflow: hidden;
         visibility: hidden;
-        i {
-            position: relative;
-            // left: 50px;
-            top: 24px;
-        }
+        border-radius: 0 15px 15px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // i {
+        //     // position: relative;
+        //     // top: 24px;
+        // }
     }
     &:hover {
         .checkmark {
@@ -507,8 +503,6 @@ $anim-delay: calc($anim-dur / $num-bars);
     0% {
         width: 0px;
         position: relative;
-        left: 20px;
-        
     }
     100% {
         width: 15%;
@@ -518,13 +512,10 @@ $anim-delay: calc($anim-dur / $num-bars);
 
 @keyframes additem__icon {
     0% {
-        position: relative;
-        left: 60px;
-        transform: rotate(180deg);
+        transform: rotate(600deg);
         
     }
     100% {
-        left: 20px;
         transform: rotate (0deg);
     }
 }

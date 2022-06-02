@@ -274,7 +274,6 @@ footer a {
   padding: 0 0 0 10px;
   margin: 15px 0 0 0;
   display: flex;
-  justify-items: flex-end;
   opacity: 0;
   animation: appear 1400ms ease-in-out 0s 1 forwards;
 }
@@ -330,7 +329,7 @@ footer a {
   text-overflow: ellipsis;
 }
 .menu-item .container-price {
-  width: 20px;
+  width: 17%;
   margin: 0;
   padding: 10px 0 10px 0;
 }
@@ -342,14 +341,13 @@ footer a {
   height: 67.1 px;
   width: 0%;
   color: white;
-  background-color: green;
-  display: flex;
+  background-color: #99E2D0;
   overflow: hidden;
   visibility: hidden;
-}
-.menu-item .checkmark i {
-  position: relative;
-  top: 24px;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu-item:hover .checkmark {
   visibility: visible;
@@ -468,7 +466,6 @@ footer a {
   0% {
     width: 0px;
     position: relative;
-    left: 20px;
   }
   100% {
     width: 15%;
@@ -477,12 +474,9 @@ footer a {
 }
 @keyframes additem__icon {
   0% {
-    position: relative;
-    left: 60px;
-    transform: rotate(180deg);
+    transform: rotate(600deg);
   }
   100% {
-    left: 20px;
     transform: rotate 0deg;
   }
 }
