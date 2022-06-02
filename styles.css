@@ -266,12 +266,15 @@ footer a {
 }
 
 .menu-item {
+  width: 100%;
+  height: 20%;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
-  padding: 10px 0 10px 10px;
+  padding: 0 0 0 10px;
   margin: 15px 0 0 0;
   display: flex;
+  justify-items: flex-end;
   opacity: 0;
   animation: appear 1400ms ease-in-out 0s 1 forwards;
 }
@@ -316,6 +319,10 @@ footer a {
 }
 .menu-item .container-name {
   width: 83%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 10px 0 10px 0;
 }
 .menu-item .container-name p {
   white-space: nowrap;
@@ -323,11 +330,33 @@ footer a {
   text-overflow: ellipsis;
 }
 .menu-item .container-price {
-  padding: 20px 0 0 0;
-  margin: 0 10px 0 10px;
+  width: 20px;
+  margin: 0;
+  padding: 10px 0 10px 0;
 }
 .menu-item .container-price .prix {
+  padding: 20px 10px 0 10px;
   font-weight: 600;
+}
+.menu-item .checkmark {
+  height: 67.1 px;
+  width: 0%;
+  color: white;
+  background-color: green;
+  display: flex;
+  overflow: hidden;
+  visibility: hidden;
+}
+.menu-item .checkmark i {
+  position: relative;
+  top: 24px;
+}
+.menu-item:hover .checkmark {
+  visibility: visible;
+  animation: additem 1000ms forwards 1 ease-in-out alternate;
+}
+.menu-item:hover i {
+  animation: additem__icon 1000ms forwards 1 ease-in-out alternate;
 }
 
 .heartbase {
@@ -433,6 +462,28 @@ footer a {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes additem {
+  0% {
+    width: 0px;
+    position: relative;
+    left: 20px;
+  }
+  100% {
+    width: 15%;
+    left: 0px;
+  }
+}
+@keyframes additem__icon {
+  0% {
+    position: relative;
+    left: 60px;
+    transform: rotate(180deg);
+  }
+  100% {
+    left: 20px;
+    transform: rotate 0deg;
   }
 }
 
