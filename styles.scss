@@ -369,10 +369,10 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: out 800ms;
+        animation: out 700ms;
         i {
             margin: 0 20px 0 20px;
-            animation: out__icon 800ms ease-in-out;
+            animation: out__icon 700ms ease-in-out;
         }
         // transition: additem 800ms backwards ease-in-out;
         // i {
@@ -383,7 +383,7 @@ footer {
     &:hover {
         .checkmark {
             visibility: visible;
-            animation: additem 800ms forwards 1 ease-in-out alternate;
+            animation: additem 700ms forwards 1 ease-in-out alternate;
         }
         i {
             animation: additem__icon 700ms forwards 1 ease-in-out alternate;
@@ -393,7 +393,9 @@ footer {
 
 }
 
-
+.hearts  {
+    display: flex;
+}
 
 .heartbase {
     position: relative;
@@ -403,7 +405,18 @@ footer {
     &:hover {
         opacity: 0;
     }
+    &__menu {
+        position: relative;
+        left: 16px;
+        opacity: 1;
+        z-index: 2;
+        transition: opacity 500ms;
+        &:hover {
+        opacity: 0; 
+        }
+    }
 }
+
 
 .heartbg {
     position: relative;
@@ -412,9 +425,21 @@ footer {
     opacity: 0;
     z-index: 2;
     transition: opacity 500ms;
-    &:hover {
+        &:hover {
         opacity: 1; 
-    }
+        }
+
+        &__menu {
+            position: relative;
+            // top: -56px;
+            color: $color1;
+            opacity: 0;
+            z-index: 2;
+            transition: opacity 500ms;
+                &:hover {
+                    opacity: 1; 
+                }
+        }
 }
 
 // Loading spinner

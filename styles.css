@@ -348,18 +348,22 @@ footer a {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: out 800ms;
+  animation: out 700ms;
 }
 .menu-item .checkmark i {
   margin: 0 20px 0 20px;
-  animation: out__icon 800ms ease-in-out;
+  animation: out__icon 700ms ease-in-out;
 }
 .menu-item:hover .checkmark {
   visibility: visible;
-  animation: additem 800ms forwards 1 ease-in-out alternate;
+  animation: additem 700ms forwards 1 ease-in-out alternate;
 }
 .menu-item:hover i {
   animation: additem__icon 700ms forwards 1 ease-in-out alternate;
+}
+
+.hearts {
+  display: flex;
 }
 
 .heartbase {
@@ -369,6 +373,16 @@ footer a {
   z-index: 1;
 }
 .heartbase:hover {
+  opacity: 0;
+}
+.heartbase__menu {
+  position: relative;
+  left: 16px;
+  opacity: 1;
+  z-index: 2;
+  transition: opacity 500ms;
+}
+.heartbase__menu:hover {
   opacity: 0;
 }
 
@@ -381,6 +395,16 @@ footer a {
   transition: opacity 500ms;
 }
 .heartbg:hover {
+  opacity: 1;
+}
+.heartbg__menu {
+  position: relative;
+  color: #9356DC;
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 500ms;
+}
+.heartbg__menu:hover {
   opacity: 1;
 }
 
