@@ -275,6 +275,7 @@ footer a {
   margin: 15px 0 0 0;
   display: flex;
   opacity: 0;
+  overflow: hidden;
   animation: appear 1400ms ease-in-out 0s 1 forwards;
 }
 .menu-item--1 {
@@ -342,19 +343,23 @@ footer a {
   width: 0%;
   color: white;
   background-color: #99E2D0;
-  overflow: hidden;
   visibility: hidden;
   border-radius: 0 15px 15px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: out 800ms;
+}
+.menu-item .checkmark i {
+  margin: 0 20px 0 20px;
+  animation: out__icon 800ms ease-in-out;
 }
 .menu-item:hover .checkmark {
   visibility: visible;
-  animation: additem 1000ms forwards 1 ease-in-out alternate;
+  animation: additem 800ms forwards 1 ease-in-out alternate;
 }
 .menu-item:hover i {
-  animation: additem__icon 1000ms forwards 1 ease-in-out alternate;
+  animation: additem__icon 700ms forwards 1 ease-in-out alternate;
 }
 
 .heartbase {
@@ -465,19 +470,39 @@ footer a {
 @keyframes additem {
   0% {
     width: 0px;
-    position: relative;
+    visibility: visible;
   }
   100% {
-    width: 15%;
-    left: 0px;
+    width: 20%;
+  }
+}
+@keyframes out {
+  0% {
+    position: relative;
+    width: 20%;
+    visibility: visible;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@keyframes out__icon {
+  0% {
+    padding: 0;
+  }
+  50% {
+    padding: 0 0 0 10px;
+  }
+  100% {
+    padding: 0 0 0 10px;
   }
 }
 @keyframes additem__icon {
   0% {
-    transform: rotate(600deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate 0deg;
+    transform: rotate(360deg);
   }
 }
 
