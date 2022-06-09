@@ -20,10 +20,12 @@ header {
     // margin: 0 0 0 0;
     padding: 3px 0 2px 0;
     // box-shadow:  0 79px 241px 72px rgba(0,0,0,0.66);
-    
+    display: flex;
+    justify-content: center;
 
     #header-logo {
         width: 40%;
+        display: flex;
         margin: 9px auto 7px auto;
         img {
             display: block;
@@ -253,6 +255,8 @@ footer {
     bottom: 30px;
     button {
         width: 50%;
+        height: 100%;
+        margin: 7% 0 7% 0;
         background: linear-gradient($color2, $color1);
         color: white;
         font-size: small;
@@ -285,7 +289,12 @@ footer {
         right: 10px;
     }
 }
-
+.menu-section--wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .menu-section {
     opacity: 0;
     animation: titleappear 800ms ease-in-out 0s 1 forwards;
@@ -338,6 +347,7 @@ footer {
 
     .container-name {
         width: 83%;
+        flex-direction: column;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -353,6 +363,8 @@ footer {
         width: 17%;
         margin: 0;
         padding: 10px 0 10px 0;
+        display: flex;
+        justify-content: center;
         .prix {
             padding: 20px 10px 0 10px;
             font-weight: 600;
@@ -571,5 +583,79 @@ $anim-delay: calc($anim-dur / $num-bars);
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media all and (min-width: 768px) {
+    .footer__txt {
+        margin-right: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .restaurants--wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .resto-card {
+        width: 21%;
+        margin: 10px;
+    }
+    #restaurants a {
+        width: 100%;
+        margin: 10px;
+    }
+    .steps--wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #fonctionnement .steps {
+        display: flex;
+        align-items: center;
+        width: 32%;
+        background-color: rgb(246, 246, 246);
+        margin: 0 0 22px 0;
+        border-radius: 15px;
+        padding: 10px 0 10px 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    .menu-item {
+        height: 25%;
+        .container-name {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .menu-section {
+        width: 30%;
+        margin: 0 0 4% 0;
+        #borderbottom {
+            position: relative;
+            right: 0;
+            left: 0;
+        }
+    }
+    .menu-section--wrapper {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .menu-title {
+        h1 {
+            padding: 2% 1.5% 1.5% 1.5%;
+        }
+    }
+    .btn--wrapper {
+        // transform: translate(0px, 50px);
+        margin: 10% 0 2% 0;
+        .btn {
+            height: 100%;
+        }
     }
 }

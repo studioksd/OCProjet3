@@ -6,9 +6,12 @@
 
 header {
   padding: 3px 0 2px 0;
+  display: flex;
+  justify-content: center;
 }
 header #header-logo {
   width: 40%;
+  display: flex;
   margin: 9px auto 7px auto;
 }
 header #header-logo img {
@@ -209,6 +212,8 @@ footer a {
 }
 .menu button {
   width: 50%;
+  height: 100%;
+  margin: 7% 0 7% 0;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   font-size: small;
@@ -238,6 +243,13 @@ footer a {
 .menu-title i {
   position: relative;
   right: 10px;
+}
+
+.menu-section--wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .menu-section {
@@ -319,6 +331,7 @@ footer a {
 }
 .menu-item .container-name {
   width: 83%;
+  flex-direction: column;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -333,6 +346,8 @@ footer a {
   width: 17%;
   margin: 0;
   padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
 }
 .menu-item .container-price .prix {
   padding: 20px 10px 0 10px;
@@ -527,6 +542,84 @@ footer a {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@media all and (min-width: 768px) {
+  .footer__txt {
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media all and (min-width: 992px) {
+  .restaurants--wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .resto-card {
+    width: 21%;
+    margin: 10px;
+  }
+
+  #restaurants a {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .steps--wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #fonctionnement .steps {
+    display: flex;
+    align-items: center;
+    width: 32%;
+    background-color: rgb(246, 246, 246);
+    margin: 0 0 22px 0;
+    border-radius: 15px;
+    padding: 10px 0 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-item {
+    height: 25%;
+  }
+  .menu-item .container-name {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-section {
+    width: 30%;
+    margin: 0 0 4% 0;
+  }
+  .menu-section #borderbottom {
+    position: relative;
+    right: 0;
+    left: 0;
+  }
+
+  .menu-section--wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .menu-title h1 {
+    padding: 2% 1.5% 1.5% 1.5%;
+  }
+
+  .btn--wrapper {
+    margin: 10% 0 2% 0;
+  }
+  .btn--wrapper .btn {
+    height: 100%;
   }
 }
 
