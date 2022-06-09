@@ -308,7 +308,7 @@ footer {
         margin: 12px 0 0 0;
         padding: 5px 0 5px 0;
     }
-    #borderbottom {
+    .borderbottom {
         border-bottom: 3px solid $color3;
         position: absolute;
         right: 85%;
@@ -371,7 +371,6 @@ footer {
         }
     }
     .checkmark {
-        height: 67.1 px;
         width: 0%;
         color: white;
         background-color: $color3;
@@ -588,7 +587,7 @@ $anim-delay: calc($anim-dur / $num-bars);
 
 @media all and (min-width: 768px) {
     .footer__txt {
-        margin-right: 5%;
+        margin: 1% 5% 1% 0;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -634,7 +633,7 @@ $anim-delay: calc($anim-dur / $num-bars);
     .menu-section {
         width: 30%;
         margin: 0 0 4% 0;
-        #borderbottom {
+        .borderbottom {
             position: relative;
             right: 0;
             left: 0;

@@ -270,7 +270,7 @@ footer a {
   margin: 12px 0 0 0;
   padding: 5px 0 5px 0;
 }
-.menu-section #borderbottom {
+.menu-section .borderbottom {
   border-bottom: 3px solid #99E2D0;
   position: absolute;
   right: 85%;
@@ -354,7 +354,6 @@ footer a {
   font-weight: 600;
 }
 .menu-item .checkmark {
-  height: 67.1 px;
   width: 0%;
   color: white;
   background-color: #99E2D0;
@@ -546,7 +545,7 @@ footer a {
 }
 @media all and (min-width: 768px) {
   .footer__txt {
-    margin-right: 5%;
+    margin: 1% 5% 1% 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -598,7 +597,7 @@ footer a {
     width: 30%;
     margin: 0 0 4% 0;
   }
-  .menu-section #borderbottom {
+  .menu-section .borderbottom {
     position: relative;
     right: 0;
     left: 0;
