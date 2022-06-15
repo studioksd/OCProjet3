@@ -1,25 +1,20 @@
-$color1: #9356DC; 
+$color1: #9356DC;
 $color2: #FF79DA;
 $color3: #99E2D0;
-$footercolor: rgb(53,53,53);
-$bgcolor1: rgb(246,246,246);
-$bgcolor2: rgb(234,234,234);
+$footercolor: rgb(53, 53, 53);
+$bgcolor1: rgb(246, 246, 246);
+$bgcolor2: rgb(234, 234, 234);
 
 * {
-	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
-	max-width: 100%;
-    // padding-left: 2px;
-    // padding-right: 2px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
 }
 
 
 
 header {
-    
-    // margin: 0 0 0 0;
     padding: 3px 0 2px 0;
-    // box-shadow:  0 79px 241px 72px rgba(0,0,0,0.66);
     display: flex;
     justify-content: center;
 
@@ -27,6 +22,7 @@ header {
         width: 40%;
         display: flex;
         margin: 9px auto 7px auto;
+
         img {
             display: block;
             margin-left: auto;
@@ -45,7 +41,8 @@ header {
     justify-content: center;
     align-items: center;
     background-color: $bgcolor2;
-    box-shadow: 0px 11px 6px -9px rgba(0,0,0,0.27) inset;
+    box-shadow: 0px 11px 6px -9px rgba(0, 0, 0, 0.27) inset;
+
     i {
         padding-right: 15px;
     }
@@ -63,13 +60,13 @@ button {
     font-size: smaller;
     border-radius: 30px;
     border: none;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 13px 0 15px 0;
     margin: 5px 0px 35px 0px;
 
     &:hover {
         background: linear-gradient($color3, $color2);
-        box-shadow: 0px 9px 6px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 9px 6px 0px rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -78,8 +75,8 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align:center;
-    
+    text-align: center;
+
     h2 {
         margin-top: 0px;
         padding: 35px 50px 0px 50px;
@@ -92,10 +89,10 @@ button {
         font-weight: 100;
     }
 
-} 
-            
+}
+
 #fonctionnement {
-    margin: 40px 15px 40px 25px; 
+    margin: 40px 15px 40px 25px;
 
     .steps {
         display: flex;
@@ -104,10 +101,11 @@ button {
         margin: 0 0 22px 0;
         border-radius: 15px;
         padding: 10px 0 10px 0;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
         &:hover {
             background-color: $bgcolor2;
+
             i {
                 color: $color1;
             }
@@ -133,7 +131,7 @@ button {
             font-weight: bold;
         }
 
-    
+
 
     }
 }
@@ -146,16 +144,16 @@ button {
         padding-left: 13px;
     }
 
-    a { 
-        text-decoration: none; 
-        color : black;
+    a {
+        text-decoration: none;
+        color: black;
         margin: 0;
         display: flex;
         justify-content: center;
-    }    
+    }
 
     .resto-card {
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         transition: 0.3s;
         width: 100%;
         height: 240px;
@@ -166,19 +164,21 @@ button {
         .card-img-div {
             width: 100%;
             height: 70%;
+
             .card-img {
                 width: 100%;
-		        height: 100%;
-		        object-fit: cover;
-		        border-radius: 25px 25px 0px 0px;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 25px 25px 0px 0px;
             }
         }
-        
+
         .textcontainer {
             width: 100%;
-	        height: 40%;
-	        line-height: 40%;
-	        padding: 5px 0 0 15px;
+            height: 40%;
+            line-height: 40%;
+            padding: 5px 0 0 15px;
+
             i {
                 position: relative;
                 left: 87%;
@@ -195,7 +195,7 @@ footer {
     background-color: $footercolor;
     color: white;
     padding: 0 0 30px 20px;
-    
+
     #logosmall {
         width: 125px;
         margin: 25px 0 0 0;
@@ -204,11 +204,11 @@ footer {
     .footerdiv {
         display: flex;
         align-items: baseline;
-        
+
         i {
             padding: 0 10px 0 0;
         }
-        
+
     }
 
     p {
@@ -228,16 +228,18 @@ footer {
 
 .menu-img {
     height: 300px;
+
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    
+
 }
 
 .menu-header {
     display: flex;
+
     i {
         color: black;
         position: absolute;
@@ -253,6 +255,7 @@ footer {
     margin: 0 0 0 0;
     position: relative;
     bottom: 30px;
+
     button {
         width: 50%;
         height: 100%;
@@ -262,52 +265,60 @@ footer {
         font-size: small;
         border-radius: 30px;
         border: none;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         padding: 15px 0 15px 0;
         margin: 50px auto 35px auto;
         display: flex;
         justify-content: center;
+
         &:hover {
             background: linear-gradient($color3, $color2);
-            box-shadow: 0px 6px 8px 1px rgba(0,0,0,0.2);
+            box-shadow: 0px 6px 8px 1px rgba(0, 0, 0, 0.2);
         }
     }
-    
+
 }
 
 .menu-title {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     h1 {
         font-family: 'Shrikhand', cursive;
         margin: 0 0 0 0;
-        padding: 20px 10px 20px 0; 
+        padding: 20px 10px 20px 0;
     }
+
     i {
         position: relative;
         right: 10px;
     }
 }
+
 .menu-section--wrapper {
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: space-around;
 }
+
 .menu-section {
     opacity: 0;
     animation: titleappear 800ms ease-in-out 0s 1 forwards;
+
     @for $i from 0 through 2 {
         &--#{$i} {
             animation-delay: 200ms + 750ms * $i ;
-         }
+        }
     }
+
     h4 {
         font-weight: 300;
         margin: 12px 0 0 0;
         padding: 5px 0 5px 0;
     }
+
     .borderbottom {
         border-bottom: 3px solid $color3;
         position: absolute;
@@ -321,25 +332,27 @@ footer {
     height: 20%;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0 2px 6px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
     padding: 0 0 0 10px;
     margin: 15px 0 0 0;
     display: flex;
     opacity: 0;
     overflow: hidden;
     animation: appear 1400ms ease-in-out 0s 1 forwards;
+
     @for $i from 1 through 10 {
         &--#{$i} {
             animation-delay: 250ms * $i;
-         }
+        }
     }
-    
+
 
     p {
         margin: 0 0 0 0;
         padding: 2px 0 2px 0;
         font-weight: 300;
     }
+
     .item-name {
         font-weight: 600;
         font-size: large;
@@ -352,6 +365,7 @@ footer {
         overflow: hidden;
         text-overflow: ellipsis;
         padding: 10px 0 10px 0;
+
         p {
             white-space: nowrap;
             overflow: hidden;
@@ -365,46 +379,46 @@ footer {
         padding: 10px 0 10px 0;
         display: flex;
         justify-content: center;
+
         .prix {
             padding: 20px 10px 0 10px;
             font-weight: 600;
         }
     }
+
     .checkmark {
         width: 0%;
         color: white;
         background-color: $color3;
-        // overflow: hidden;
         visibility: hidden;
         border-radius: 0 15px 15px 0;
         display: flex;
         justify-content: center;
         align-items: center;
         animation: out 700ms;
+
         i {
             margin: 0 20px 0 20px;
             animation: out__icon 700ms ease-in-out;
         }
-        // transition: additem 800ms backwards ease-in-out;
-        // i {
-        //     // position: relative;
-        //     // top: 24px;
-        // }
+
     }
+
     &:hover {
         .checkmark {
             visibility: visible;
             animation: additem 700ms forwards 1 ease-in-out alternate;
         }
+
         i {
             animation: additem__icon 700ms forwards 1 ease-in-out alternate;
         }
     }
-        
+
 
 }
 
-.hearts  {
+.hearts {
     display: flex;
 }
 
@@ -413,17 +427,20 @@ footer {
     top: -40px;
     transition: opacity 400ms;
     z-index: 1;
+
     &:hover {
         opacity: 0;
     }
+
     &__menu {
         position: relative;
         left: 16px;
         opacity: 1;
         z-index: 2;
         transition: opacity 500ms;
+
         &:hover {
-        opacity: 0; 
+            opacity: 0;
         }
     }
 }
@@ -436,21 +453,22 @@ footer {
     opacity: 0;
     z-index: 2;
     transition: opacity 500ms;
-        &:hover {
-        opacity: 1; 
-        }
 
-        &__menu {
-            position: relative;
-            // top: -56px;
-            color: $color1;
-            opacity: 0;
-            z-index: 2;
-            transition: opacity 500ms;
-                &:hover {
-                    opacity: 1; 
-                }
+    &:hover {
+        opacity: 1;
+    }
+
+    &__menu {
+        position: relative;
+        color: $color1;
+        opacity: 0;
+        z-index: 2;
+        transition: opacity 500ms;
+
+        &:hover {
+            opacity: 1;
         }
+    }
 }
 
 // Loading spinner
@@ -468,33 +486,35 @@ $anim-delay: calc($anim-dur / $num-bars);
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 2;
     cursor: pointer;
     animation: hide 3s ease-in 0s 1 forwards;
-  }
+}
 
 .load {
     width: $size*20;
     height: $size*15;
     display: flex;
     justify-content: space-evenly;
-    position:absolute;
-    top:0;
+    position: absolute;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+
     &__bar {
         background-color: $color3;
         height: 100%;
         width: $size*1.5;
         border-radius: 50px;
         animation: bars $anim-dur backwards 5 ease-in-out alternate;
+
         @for $i from 1 through $num-bars {
             &--#{$i} {
                 animation-delay: $anim-delay * $i;
-             }
+            }
         }
     }
 }
@@ -503,6 +523,7 @@ $anim-delay: calc($anim-dur / $num-bars);
     0% {
         transform: scaleY(0.5);
     }
+
     100% {
         transform: scaleY(1.0);
         opacity: 0.3;
@@ -524,6 +545,7 @@ $anim-delay: calc($anim-dur / $num-bars);
         position: relative;
         top: 15px;
     }
+
     100% {
         opacity: 1;
         top: -15px;
@@ -534,6 +556,7 @@ $anim-delay: calc($anim-dur / $num-bars);
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -547,6 +570,7 @@ $anim-delay: calc($anim-dur / $num-bars);
         width: 0px;
         visibility: visible;
     }
+
     100% {
         width: 20%;
     }
@@ -558,6 +582,7 @@ $anim-delay: calc($anim-dur / $num-bars);
         width: 20%;
         visibility: visible;
     }
+
     100% {
         width: 0%;
     }
@@ -567,9 +592,11 @@ $anim-delay: calc($anim-dur / $num-bars);
     0% {
         padding: 0;
     }
+
     50% {
         padding: 0 0 0 10px;
     }
+
     100% {
         padding: 0 0 0 10px;
     }
@@ -578,8 +605,9 @@ $anim-delay: calc($anim-dur / $num-bars);
 @keyframes additem__icon {
     0% {
         transform: rotate(0deg);
-        
+
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -600,19 +628,23 @@ $anim-delay: calc($anim-dur / $num-bars);
         flex-direction: row;
         justify-content: space-between;
     }
+
     .resto-card {
         width: 21%;
         margin: 10px;
     }
+
     #restaurants a {
         width: 100%;
         margin: 10px;
     }
+
     .steps--wrapper {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
+
     #fonctionnement .steps {
         display: flex;
         align-items: center;
@@ -623,36 +655,43 @@ $anim-delay: calc($anim-dur / $num-bars);
         padding: 10px 0 10px 0;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
+
     .menu-item {
         height: 25%;
+
         .container-name {
             display: flex;
             justify-content: center;
         }
     }
+
     .menu-section {
         width: 30%;
         margin: 0 0 4% 0;
+
         .borderbottom {
             position: relative;
             right: 0;
             left: 0;
         }
     }
+
     .menu-section--wrapper {
         display: flex;
         width: 100%;
         flex-direction: row;
         justify-content: space-around;
     }
+
     .menu-title {
         h1 {
             padding: 2% 1.5% 1.5% 1.5%;
         }
     }
+
     .btn--wrapper {
-        // transform: translate(0px, 50px);
         margin: 10% 0 2% 0;
+
         .btn {
             height: 100%;
         }
