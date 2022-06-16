@@ -9,16 +9,19 @@ header {
   display: flex;
   justify-content: center;
 }
+
 header #header-logo {
   width: 40%;
   display: flex;
   margin: 9px auto 7px auto;
 }
+
 header #header-logo img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 header #header-logo-menu {
   width: 40%;
   margin: 9px auto 7px auto;
@@ -31,9 +34,11 @@ header #header-logo-menu {
   background-color: rgb(234, 234, 234);
   box-shadow: 0px 11px 6px -9px rgba(0, 0, 0, 0.27) inset;
 }
+
 #location i {
   padding-right: 15px;
 }
+
 #location p {
   font-weight: 400;
   font-size: small;
@@ -50,6 +55,7 @@ button {
   padding: 13px 0 15px 0;
   margin: 5px 0px 35px 0px;
 }
+
 button:hover {
   background: linear-gradient(#99E2D0, #FF79DA);
   box-shadow: 0px 9px 6px 0px rgba(0, 0, 0, 0.2);
@@ -62,11 +68,13 @@ button:hover {
   justify-content: center;
   text-align: center;
 }
+
 #main-header h2 {
   margin-top: 0px;
   padding: 35px 50px 0px 50px;
   font-weight: 700;
 }
+
 #main-header p {
   margin-top: 0px;
   padding: 0px 20px 0 20px;
@@ -76,6 +84,7 @@ button:hover {
 #fonctionnement {
   margin: 40px 15px 40px 25px;
 }
+
 #fonctionnement .steps {
   display: flex;
   align-items: center;
@@ -85,12 +94,15 @@ button:hover {
   padding: 10px 0 10px 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
 #fonctionnement .steps:hover {
   background-color: rgb(234, 234, 234);
 }
+
 #fonctionnement .steps:hover i {
   color: #9356DC;
 }
+
 #fonctionnement .steps .number {
   border-radius: 50px;
   font-size: smaller;
@@ -101,10 +113,12 @@ button:hover {
   right: 10px;
   font-weight: 400;
 }
+
 #fonctionnement .steps i {
   margin: 15px 15px 15px 10px;
   color: grey;
 }
+
 #fonctionnement .steps p {
   font-weight: bold;
 }
@@ -113,9 +127,11 @@ button:hover {
   padding: 40px 2px 40px 2px;
   background-color: rgb(246, 246, 246);
 }
+
 #restaurants h2 {
   padding-left: 13px;
 }
+
 #restaurants a {
   text-decoration: none;
   color: black;
@@ -123,6 +139,7 @@ button:hover {
   display: flex;
   justify-content: center;
 }
+
 #restaurants .resto-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -132,22 +149,26 @@ button:hover {
   background-color: white;
   margin: 2%;
 }
+
 #restaurants .resto-card .card-img-div {
   width: 100%;
   height: 70%;
 }
+
 #restaurants .resto-card .card-img-div .card-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 25px 25px 0px 0px;
 }
+
 #restaurants .resto-card .textcontainer {
   width: 100%;
   height: 40%;
   line-height: 40%;
   padding: 5px 0 0 15px;
 }
+
 #restaurants .resto-card .textcontainer i {
   position: relative;
   left: 87%;
@@ -159,21 +180,26 @@ footer {
   color: white;
   padding: 0 0 30px 20px;
 }
+
 footer #logosmall {
   width: 125px;
   margin: 25px 0 0 0;
 }
+
 footer .footerdiv {
   display: flex;
   align-items: baseline;
 }
+
 footer .footerdiv i {
   padding: 0 10px 0 0;
 }
+
 footer p {
   margin: 10px 0 0 0px;
   font-size: medium;
 }
+
 footer a {
   text-decoration: none;
   color: white;
@@ -186,6 +212,7 @@ footer a {
 .menu-img {
   height: 300px;
 }
+
 .menu-img img {
   width: 100%;
   height: 100%;
@@ -195,6 +222,7 @@ footer a {
 .menu-header {
   display: flex;
 }
+
 .menu-header i {
   color: black;
   position: absolute;
@@ -210,6 +238,7 @@ footer a {
   position: relative;
   bottom: 30px;
 }
+
 .menu button {
   width: 50%;
   height: 100%;
@@ -225,6 +254,7 @@ footer a {
   display: flex;
   justify-content: center;
 }
+
 .menu button:hover {
   background: linear-gradient(#99E2D0, #FF79DA);
   box-shadow: 0px 6px 8px 1px rgba(0, 0, 0, 0.2);
@@ -235,11 +265,13 @@ footer a {
   align-items: center;
   justify-content: space-between;
 }
+
 .menu-title h1 {
   font-family: "Shrikhand", cursive;
   margin: 0 0 0 0;
   padding: 20px 10px 20px 0;
 }
+
 .menu-title i {
   position: relative;
   right: 10px;
@@ -256,20 +288,25 @@ footer a {
   opacity: 0;
   animation: titleappear 800ms ease-in-out 0s 1 forwards;
 }
+
 .menu-section--0 {
   animation-delay: 200ms;
 }
+
 .menu-section--1 {
   animation-delay: 950ms;
 }
+
 .menu-section--2 {
   animation-delay: 1700ms;
 }
+
 .menu-section h4 {
   font-weight: 300;
   margin: 12px 0 0 0;
   padding: 5px 0 5px 0;
 }
+
 .menu-section .borderbottom {
   border-bottom: 3px solid #99E2D0;
   position: absolute;
@@ -290,45 +327,58 @@ footer a {
   overflow: hidden;
   animation: appear 1400ms ease-in-out 0s 1 forwards;
 }
+
 .menu-item--1 {
   animation-delay: 250ms;
 }
+
 .menu-item--2 {
   animation-delay: 500ms;
 }
+
 .menu-item--3 {
   animation-delay: 750ms;
 }
+
 .menu-item--4 {
   animation-delay: 1000ms;
 }
+
 .menu-item--5 {
   animation-delay: 1250ms;
 }
+
 .menu-item--6 {
   animation-delay: 1500ms;
 }
+
 .menu-item--7 {
   animation-delay: 1750ms;
 }
+
 .menu-item--8 {
   animation-delay: 2000ms;
 }
+
 .menu-item--9 {
   animation-delay: 2250ms;
 }
+
 .menu-item--10 {
   animation-delay: 2500ms;
 }
+
 .menu-item p {
   margin: 0 0 0 0;
   padding: 2px 0 2px 0;
   font-weight: 300;
 }
+
 .menu-item .item-name {
   font-weight: 600;
   font-size: large;
 }
+
 .menu-item .container-name {
   width: 83%;
   flex-direction: column;
@@ -337,11 +387,13 @@ footer a {
   text-overflow: ellipsis;
   padding: 10px 0 10px 0;
 }
+
 .menu-item .container-name p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .menu-item .container-price {
   width: 17%;
   margin: 0;
@@ -349,10 +401,12 @@ footer a {
   display: flex;
   justify-content: center;
 }
+
 .menu-item .container-price .prix {
   padding: 20px 10px 0 10px;
   font-weight: 600;
 }
+
 .menu-item .checkmark {
   width: 0%;
   color: white;
@@ -364,14 +418,17 @@ footer a {
   align-items: center;
   animation: out 700ms;
 }
+
 .menu-item .checkmark i {
   margin: 0 20px 0 20px;
   animation: out__icon 700ms ease-in-out;
 }
+
 .menu-item:hover .checkmark {
   visibility: visible;
   animation: additem 700ms forwards 1 ease-in-out alternate;
 }
+
 .menu-item:hover i {
   animation: additem__icon 700ms forwards 1 ease-in-out alternate;
 }
@@ -386,9 +443,11 @@ footer a {
   transition: opacity 400ms;
   z-index: 1;
 }
+
 .heartbase:hover {
   opacity: 0;
 }
+
 .heartbase__menu {
   position: relative;
   left: 16px;
@@ -396,6 +455,7 @@ footer a {
   z-index: 2;
   transition: opacity 500ms;
 }
+
 .heartbase__menu:hover {
   opacity: 0;
 }
@@ -408,9 +468,11 @@ footer a {
   z-index: 2;
   transition: opacity 500ms;
 }
+
 .heartbg:hover {
   opacity: 1;
 }
+
 .heartbg__menu {
   position: relative;
   color: #9356DC;
@@ -418,6 +480,7 @@ footer a {
   z-index: 2;
   transition: opacity 500ms;
 }
+
 .heartbg__menu:hover {
   opacity: 1;
 }
@@ -448,6 +511,7 @@ footer a {
   right: 0;
   margin: auto;
 }
+
 .load__bar {
   background-color: #99E2D0;
   height: 100%;
@@ -455,18 +519,23 @@ footer a {
   border-radius: 50px;
   animation: bars 800ms backwards 5 ease-in-out alternate;
 }
+
 .load__bar--1 {
   animation-delay: 160ms;
 }
+
 .load__bar--2 {
   animation-delay: 320ms;
 }
+
 .load__bar--3 {
   animation-delay: 480ms;
 }
+
 .load__bar--4 {
   animation-delay: 640ms;
 }
+
 .load__bar--5 {
   animation-delay: 800ms;
 }
@@ -475,74 +544,90 @@ footer a {
   0% {
     transform: scaleY(0.5);
   }
+
   100% {
     transform: scaleY(1);
     opacity: 0.3;
   }
 }
+
 @keyframes hide {
   100% {
     opacity: 0;
     visibility: hidden;
   }
 }
+
 @keyframes appear {
   0% {
     opacity: 0;
     position: relative;
     top: 15px;
   }
+
   100% {
     opacity: 1;
     top: -15px;
   }
 }
+
 @keyframes titleappear {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @keyframes additem {
   0% {
     width: 0px;
     visibility: visible;
   }
+
   100% {
     width: 20%;
   }
 }
+
 @keyframes out {
   0% {
     position: relative;
     width: 20%;
     visibility: visible;
   }
+
   100% {
     width: 0%;
   }
 }
+
 @keyframes out__icon {
   0% {
     padding: 0;
   }
+
   50% {
     padding: 0 0 0 10px;
   }
+
   100% {
     padding: 0 0 0 10px;
   }
 }
+
 @keyframes additem__icon {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 @media all and (min-width: 768px) {
   .footer__txt {
     margin: 1% 5% 1% 0;
@@ -551,6 +636,7 @@ footer a {
     justify-content: space-between;
   }
 }
+
 @media all and (min-width: 992px) {
   .restaurants--wrapper {
     display: flex;
@@ -588,6 +674,7 @@ footer a {
   .menu-item {
     height: 25%;
   }
+
   .menu-item .container-name {
     display: flex;
     justify-content: center;
@@ -597,6 +684,7 @@ footer a {
     width: 30%;
     margin: 0 0 4% 0;
   }
+
   .menu-section .borderbottom {
     position: relative;
     right: 0;
@@ -617,6 +705,7 @@ footer a {
   .btn--wrapper {
     margin: 10% 0 2% 0;
   }
+
   .btn--wrapper .btn {
     height: 100%;
   }
